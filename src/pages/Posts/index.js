@@ -97,9 +97,9 @@ export default function Posts(){
  }
 
 
-//  useEffect(()=>{
-//     getData(2);
-//    },[])
+ useEffect(()=>{
+    getData(2);
+   },[])
 
   return(
     <div className="postItems">
@@ -109,7 +109,7 @@ export default function Posts(){
             //   <p>item={item.title}</p>
             //   <img  src={item.url}/>
             // </div>
-            <Table  columns={columns} dataSource={()=>{getData(20)}}  key={item.id} />
+            <Table  columns={columns} dataSource={data}  key={item.id} />
           )
          
       })}
